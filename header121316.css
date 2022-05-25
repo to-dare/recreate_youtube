@@ -1,0 +1,177 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    /* background-color: rgb(145, 145, 145); */
+    background-color: white;
+    /* border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(201, 201, 201); */
+    border: 1px solid rgb(201, 201, 201);
+    z-index: 100;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.ham {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.middle {
+    display: flex;
+    flex: 1;
+    width: 1fr;
+    margin-right: 35px;
+    max-width: 500px;
+    /* background-color: pink; */
+    /* flex-direction: row; */
+    align-items: center;
+}
+
+.Search_bar {
+    /* input */
+    flex: 1;
+    width: 0;
+    height: 36px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(143, 143, 143);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.Search_bar::placeholder {
+    /* font-family: Roboto, Arial; */
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search {
+    height: 40px;
+    width: 62px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(143, 143, 143);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-pic {
+    height: 24px;
+    /* margin-top: 3px; */
+}
+
+.mic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    /* position: relative; */
+}
+
+
+.mic-pic {
+    height: 24px;
+    /* margin-top: 3px; */
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 2px;
+    /* font-family: Roboto, Arial; */
+    font-size: 13px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search:hover .tooltip,
+.mic:hover .tooltip,
+.it:hover .tooltip,
+.notii:hover .tooltip {
+    opacity: 1;
+}
+
+
+
+.right {
+    width: 200px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 45px;
+    /* background-color: pink;    */
+
+}
+
+.upload, .apps, .noti {
+    height: 26px;
+}
+
+
+
+.a1 {
+    position: absolute;
+    right: -3px;
+    top: -3.5px;
+    background-color: rgb(200, 1, 1);
+    color: white;
+    font-size: 10px;
+    /* font-family: Roboto, Arial; */
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 11px;
+}
+
+.头像 {
+    height: 32px;
+    border-radius: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+
+.search, .mic, .it, .notii {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+}
